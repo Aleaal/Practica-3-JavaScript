@@ -1,0 +1,262 @@
+/* Contenido de body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to left, lightgreen, blue);
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Estilos específicos para el fondo en index.html */
+body.index {
+  background: linear-gradient(to left, rgb(100, 0, 128), rgb(255, 255, 0));
+}
+
+/* Estilos específicos para el fondo en ps4.html y xbox.html */
+body.consolas {
+  background: linear-gradient(to left, lightgreen, blue);
+}
+
+/* Contenido nav*/
+nav {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding-top: 20px;
+padding-left: 5%;
+padding-right: 5%;
+font-weight: bold;
+box-shadow: 0 4px 6px white;
+}
+/* Contenido de h1 */
+h1{
+color: white;
+font-size: 45px;
+}
+/* Contenido de ul li */
+ul li{
+display: inline-block;
+padding: 0px 20px;
+}
+/* Contenido de a */
+a{
+color: white;
+text-decoration: none;
+transition: color 0.3s ease;
+}
+
+a:hover{
+color: aqua;
+}
+/* Contenido Principal */
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px white;
+}
+/* Para las imágenes*/
+img {
+  display: inline-block;
+  margin-right: 10px;
+  max-width: 300px;
+  border: none; 
+
+/* Estilos específicos para la sección de juegos */
+}
+.game {
+  margin-bottom: 20px;
+}
+
+.game p {
+  text-align: justify;
+  margin: 10px 0;
+}
+
+.game p.trailer {
+  text-align: center;
+  font-weight: bold;
+}
+
+.justificado {
+  text-align: justify;
+}
+/* Pie de página */
+footer {
+  width: 100%;
+  position: relative;
+  padding: 10px 8%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: white; 
+}
+/* Logo en el pie de página */
+.logo_tienda {
+  height: 80px;
+  margin-bottom: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+}
+/* Contenido del pie de página */
+.cont_redes_sociales, .cont_menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+/* Imagenes de redes sociales en el pie de página */
+
+.red_social {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  border: 1px solid white;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH2xuehjzZflQ9vHOk64Dg21JVlGLNpa4YXQ&usqp=CAU);
+  background-position: center;
+  background-size: 40%;
+  background-repeat: no-repeat;
+  margin: 1rem;
+}
+
+.red_social:hover{
+  background-color: black;
+  filter: invert(1);
+}
+
+.red_social:nth-of-type(2){
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQcAP10b_fOQmVYPKGqaiap7dyBvTOrZ0IsQ&usqp=CAU);
+}
+
+.red_social:nth-of-type(3){
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_7XE3G4BqqhorW-5YDNYaccJNzOpDwOr14w&usqp=CAU)
+}
+
+.red_social:nth-of-type(4){
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzh3RCtyRVtEtqDw_Atk9FWy7KkrPRfV_p9g&usqp=CAU)
+}
+
+.cont_redes_sociales{
+  list-style-type: none;
+  color: white;
+  font-size: 18px;
+}
+
+/* Menu en el pie de página */
+
+.menu{
+  margin: 1rem 1.5rem;
+  cursor: pointer;
+  opacity: 0.6;
+  color: white;
+}
+
+.menu:hover{
+  opacity: 1;
+}
+
+/* Texto de copyright en el pie de página */
+
+.copyright{
+  color: white;
+  opacity: 0.3;
+  text-align: center;
+}
+
+/* Estilos para el botón "Agregar al Carrito" */
+.carrito {
+  background-color: blue;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.carrito:hover {
+  background-color: lightseagreen;
+}
+
+/* Estilos específicos para el formulario de contacto */
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 0 10px white;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darkgrey;
+}
+
+/* Estilo para el contenedor de valoración */
+.valoracion-container {
+  margin-top: 10px;
+}
+
+/* Estilo para la etiqueta de valoración */
+.valoracion-container label {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+/* Estilo para el select de valoración */
+.valoracion-container select {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Cambia el color de fondo cuando el select está activo */
+.valoracion-container select:focus {
+  background-color: wheat;
+}
+
+/* Estilo para las opciones del select */
+.valoracion-container select option {
+  font-size: 16px;
+}
+  
+
+.game img.visible {
+  display: block;
+  margin: 0 auto; 
+}
+
+/* Otros estilos para las imágenes */
+.game img {
+  max-width: 100%;
+  height: auto;
+  display: none; 
+}

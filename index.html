@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Aleal Game Store</title>
+</head>
+
+<body id=fondo class="index">
+  <!-- Barra de Navegación -->
+<header>
+  <nav>
+    <h1>Aleal Game Store</h1>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="ps4.html">Juegos de PS4</a></li>
+      <li><a href="xbox.html">Juegos de Xbox One</a></li>
+    </ul>
+  </nav>
+</header>
+  <!-- Contenido Principal -->
+  <main>
+    <h1>¡Bienvenido a Aleal Game Store!</h1>
+    <p>Explora nuestra selección de videojuegos para PS4 y Xbox One.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/PlayStation_logo.svg/2560px-PlayStation_logo.svg.png" alt="ps_logo">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Xbox_logo_2012_cropped.svg/1200px-Xbox_logo_2012_cropped.svg.png" alt="xbox_logo">
+    <!-- Formulario de Contacto -->
+    <h1>Suscríbete para recibir ofertas y novedades</h1>
+    <form id="subscription-form" onsubmit="return validarFormulario()">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="apellidos">Apellidos:</label>
+      <input type="text" id="apellidos" name="apellidos" required>
+
+      <label for="email">Correo Electrónico:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="telefono">Número de Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" required>
+
+      <button type="submit">Suscribirse</button>
+    </form>
+    <!-- Para poder cambiar el fondo-->
+    <button type="button" onclick= "cambiarFondo()">Cambiar Fondo </button> 
+  </main>  
+  <!-- Pie de Página -->
+  <footer>
+    <img src="https://static.vecteezy.com/system/resources/previews/006/257/496/non_2x/gaming-store-logo-vide-game-shop-logo-template-design-design-illustration-vector.jpg" alt="logo_aleal" class="logo_tienda">
+    <div class="cont_redes_sociales">
+      <a href="https://www.instagram.com/"  class="red_social"></a>
+      <a href="https://www.facebook.com/"  class="red_social"></a>
+      <a href="https://twitter.com/home?lang=es"  class="red_social"></a>
+      <a href="https://es.linkedin.com/"  class="red_social"></a>
+    </div>
+    <ul class="cont_menu">
+      <li class="menu">Legal</li>
+      <li class="menu">Cookies</li>
+      <li class="menu">Privacy</li>
+      <li class="menu">Shipping</li>
+      <li class="menu">Refounds</li>
+    </ul>
+    <span class="copyright">&copy; 2024, Aleal Game Store. All rights reserved.</span>
+  </footer>
+    <!-- Scripts de JavaScript -->
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
